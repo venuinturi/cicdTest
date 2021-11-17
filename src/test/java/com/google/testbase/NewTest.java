@@ -28,10 +28,12 @@ public class NewTest {
 	  
 	  driver.get("https://www.google.com");
 	  
+	  
   }
 
   @AfterMethod
   public void afterMethod() {
+	  System.out.println("quitting driver");
 	  driver.quit();
   }
 
